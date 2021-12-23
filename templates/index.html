@@ -1,65 +1,78 @@
 <!-- gets content from base.html -->
 {% extends "base.html" %}
 {% block content %}
-<div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-            <a href="post.html">
-                <h2 class="post-title">
-                    Man must explore, and this is exploration at its greatest
-                </h2>
-                <h3 class="post-subtitle">
-                    Problems look mighty small from 150 miles up
-                </h3>
-            </a>
-            <p class="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
-                on September 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-            <a href="post.html">
-                <h2 class="post-title">
-                    I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                </h2>
-            </a>
-            <p class="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
-                on September 18, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-            <a href="post.html">
-                <h2 class="post-title">
-                    Science has not yet mastered prophecy
-                </h2>
-                <h3 class="post-subtitle">
-                    We predict too much for the next year and yet far too little for the next ten.
-                </h3>
-            </a>
-            <p class="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
-                on August 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-            <a href="post.html">
-                <h2 class="post-title">
-                    Failure is not an option
-                </h2>
-                <h3 class="post-subtitle">
-                    Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-                </h3>
-            </a>
-            <p class="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
-                on July 8, 2019</p>
-        </div>
-        <hr>
-        <!-- Pager -->
-        <div class="clearfix">
-            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div>
-    </div>
-</div>
+<section class="container">
+    <h1 id="feats">Feats and class features</h1>
+    <ul>
+        <li>
+            <strong>Elven heritage: </strong> Immune to magic sleep effects. +2 racial bonus on
+            save vs enchantment spells or effects.
+        </li>
+        <li>
+            <strong>Elven training: </strong> Martial Weapon Proficiency feats for longsword, rapier, longbow (also
+            composite) and shortbow (also composite)
+        </li>
+        <li>
+            <strong>Elven senses: </strong> If passing within 5 ft of a secret/concealed door,
+            entitled to Search check as if actively looking
+        </li>
+        <li>
+            <strong>Improved Initiative:</strong> +4 Initiative.
+        </li>
+        <li>
+            <strong>Knack for Magic:</strong> You get a +2 bonus on Spellcraft skill checks. In
+            addition, you have an innate talent for magic, granting you
+            the following spell-like abilities as a 1st-level caster: 1/day—
+            detect magic, light, and prestidigitation.
+        </li>
+        <li>
+            <strong>Cloaked Casting:</strong> +1 to spell DC on spell that targets foe that is
+            denied a Dex bonus to
+            AC: surprised, has not acted yet in combat. +2 on rolls made to overcome the spell resistance of any affected target.
+        </li>
+        <li>
+            <strong>Surprise casting:</strong> when succesfully using Bluff to feint in combat,
+            target is denied DEX
+            bonus to AC for next melee atk you make, or next spell you cast. Must
+            remain in melee, atk must be made/spell cast on or before your next
+            turn. Feinting = move action (lvl 6). Only useful against humanoids, and opponent gets to add BAB to
+            Sense Motive check
+        </li>
+        <li>
+            <strong>Spell Focus (Enchantment) [lvl 3]:</strong> +1 to spell DC
+        </li>
+        <li>
+            <strong>Spell Focus (Illusion) [lvl 6]:</strong> +1 to spell DC
+        </li>
+        <li>
+            <strong>Greater Spell Focus (Illusion) [lvl 9]:</strong> +1 to spell DC
+        </li>
+        <li>
+            <strong>Silent Spell:</strong> silent spell is cast with no verbal components. Spells
+            without verbal
+            components are not affected. Spell uses up spell slot one level higher than spell’s
+            actual level.
+        </li>
+        <li>
+            <strong>Divination Expertise (Ex):</strong> A visionary seeker may add his class level to his caster
+            level when casting
+            divination spells. This bonus stacks with the bonus gained for additional spellcasting levels at every
+            odd-numbered class level. For example, a 10th-level wizard/4th-level visionary seeker would cast
+            divinations as a 16th-level caster (10 for wizard levels, 4 for visionary seeker levels, and 2 for the
+            added spellcasting levels gained from visionary seeker class levels).
+        </li>
+        <li>
+            <strong>Spells per Day/Spells Known:</strong> At each odd-numbered visionary seeker level, the character
+            gains new spells
+            per day (and spells known, if applicable) as if he had also gained a level in a spellcasting class to
+            which he belonged before adding the prestige class. He does not, however, gain any other benefit a
+            character of that class would have gained (improved undead turning, metamagic or item creation feats, or
+            the like). If the character had more than one spellcasting class before becoming a visionary seeker, the
+            player must decide to which class to add each visionary seeker level for determining spells per day,
+            spells known, and overall caster level.
+        </li>
+    </ul>
+    <h1>Languages</h1>
+    <p>Common, Elven, Draconic, Gnoll, Goblin, Orc, Sylvan, Olman</p>
+</section>
 {% endblock %}
