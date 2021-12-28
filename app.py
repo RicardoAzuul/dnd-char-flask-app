@@ -41,9 +41,49 @@ def contact():
     return render_template("contact.html", page_title="Contact")
 
 
-@app.route("/careers")
+@app.route("/lvl-5-spells")
 def careers():
-    return render_template("careers.html", page_title="Careers")
+    return render_template("lvl-5-spells.html", page_title="Level 5 Spells")
+
+
+@app.route("/lvl-4-spells")
+def careers():
+    return render_template("lvl-4-spells.html", page_title="Level 4 Spells")
+
+
+@app.route("/lvl-3-spells")
+def careers():
+    return render_template("lvl-3-spells.html", page_title="Level 3 Spells")
+
+
+@app.route("/lvl-2-spells")
+def careers():
+    return render_template("lvl-2-spells.html", page_title="Level 2 Spells")
+
+
+@app.route("/lvl-1-spells")
+def careers():
+    return render_template("lvl-1-spells.html", page_title="Level 1 Spells")
+
+
+@app.route("/lvl-0-spells")
+def careers():
+    return render_template("lvl-0-spells.html", page_title="Level 0 Spells")
+
+
+@app.route("/spelltactics")
+def careers():
+    return render_template("spelltactics.html", page_title="Spell Tactics")
+
+
+@app.route("/handy-haversack")
+def careers():
+    return render_template("handy-haversack.html", page_title="Handy Haversack")
+
+
+@app.route("/magic-items")
+def careers():
+    return render_template("magic-items.html", page_title="Magic Items")
 
 
 if __name__ == "__main__":
