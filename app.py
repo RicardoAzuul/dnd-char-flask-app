@@ -42,47 +42,47 @@ def contact():
 
 
 @app.route("/lvl-5-spells")
-def careers():
+def lvl_5_spells():
     return render_template("lvl-5-spells.html", page_title="Level 5 Spells")
 
 
 @app.route("/lvl-4-spells")
-def careers():
+def lvl_4_spells():
     return render_template("lvl-4-spells.html", page_title="Level 4 Spells")
 
 
 @app.route("/lvl-3-spells")
-def careers():
+def lvl_3_spells():
     return render_template("lvl-3-spells.html", page_title="Level 3 Spells")
 
 
 @app.route("/lvl-2-spells")
-def careers():
+def lvl_2_spells():
     return render_template("lvl-2-spells.html", page_title="Level 2 Spells")
 
 
 @app.route("/lvl-1-spells")
-def careers():
+def lvl_1_spells():
     return render_template("lvl-1-spells.html", page_title="Level 1 Spells")
 
 
 @app.route("/lvl-0-spells")
-def careers():
+def lvl_0_spells():
     return render_template("lvl-0-spells.html", page_title="Level 0 Spells")
 
 
 @app.route("/spelltactics")
-def careers():
+def spelltactics():
     return render_template("spelltactics.html", page_title="Spell Tactics")
 
 
 @app.route("/handy-haversack")
-def careers():
+def handy_haversack():
     return render_template("handy-haversack.html", page_title="Handy Haversack")
 
 
 @app.route("/magic-items")
-def careers():
+def magic_items():
     return render_template("magic-items.html", page_title="Magic Items")
 
 
