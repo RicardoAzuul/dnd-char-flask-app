@@ -4,12 +4,6 @@
     <section class="container">
         <h1>Level 5 Spells</h1>
 
-        <!-- this is the JSON data that is passed to the template via app.py  -->
-        {% for item in data %}
-            {{ item.range_name }}
-            {{ item.range_in_feet}}
-        {% endfor %}
-
         <table class="table table-sm">
             <tr>
                 <th>Spell Lvl</th>
@@ -40,23 +34,6 @@
             <button onclick="resetSlots()" class="btn btn-primary" type="button">Reset</button>
             <button onclick="subtractSlot()" class="btn btn-primary" type="button">Subtract slot</button>
         </p>
-
-        <h3 id="spell-ranges">Spell Ranges</h3>
-        <table class="table table-sm">
-            <tr>
-                <td>Close</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>Medium</td>
-                <td>200</td>
-
-            </tr>
-            <tr>
-                <td>Long</td>
-                <td>800</td>
-            </tr>
-        </table>
 
         <h3 id="spell-ranges">Spell Ranges</h3>
         <table class="table table-sm">
