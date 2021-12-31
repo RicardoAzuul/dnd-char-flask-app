@@ -1,0 +1,14 @@
+[
+  {
+    "range_name": "Close",
+    "range_in_feet": "50"
+  },
+  {
+    "range_name": "Medium",
+    "range_in_feet": "200"
+  },
+  {
+    "range_name": "Long",
+    "range_in_feet": "800"
+  }
+]
