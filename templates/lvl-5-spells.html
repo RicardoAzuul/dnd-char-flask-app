@@ -38,7 +38,7 @@
         <h3 id="spell-ranges">Spell Ranges</h3>
         <table class="table table-sm">
         <!-- this is the JSON data that is passed to the template via app.py  -->
-            {% for item in data %}
+            {% for item in spellranges %}
                 <tr>
                     <td>{{ item.range_name }}</td>
                     <td>{{ item.range_in_feet}}</td>

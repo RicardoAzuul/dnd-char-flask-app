@@ -43,10 +43,10 @@ def contact():
 
 @app.route("/lvl-5-spells")
 def lvl_5_spells():
-    data = []
-    with open("data/aenwyn.json", "r") as json_data:
-        data = json.load(json_data)
-    return render_template("lvl-5-spells.html", page_title="Level 5 Spells", data=data)
+    spellranges = []
+    with open("data/spellranges.json", "r") as json_data:
+        spellranges = json.load(json_data)
+    return render_template("lvl-5-spells.html", page_title="Level 5 Spells", spellranges=spellranges)
 
 
 @app.route("/lvl-4-spells")
