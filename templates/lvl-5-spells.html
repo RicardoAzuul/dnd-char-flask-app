@@ -4,6 +4,13 @@
     <section class="container">
         <h1>Level 5 Spells</h1>
 
+        {% for item in spellcasting %}
+        <tr>
+            <td>{{ item }}</td>
+            <td>{{ item }}</td>
+        </tr>               
+    {% endfor %}
+
         <table class="table table-sm">
             <tr>
                 <th>Spell Lvl</th>
@@ -41,7 +48,7 @@
             {% for item in spellranges %}
                 <tr>
                     <td>{{ item.range_name }}</td>
-                    <td>{{ item.range_in_feet}}</td>
+                    <td>{{ item.range_in_feet }}</td>
                 </tr>               
             {% endfor %}
         </table>
