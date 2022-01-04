@@ -1,9 +1,18 @@
 [
     {
-        "spell_level": 5,
-        "bonus_spells": "1",
-        "daily_spells": "3",
-        "total_spells": "4",
+        "spell_level": 5      
+    },
+    {
+        "bonus_spells": 1
+    },
+    {
+        "daily_spells": 3
+    },
+    {
+        "total_spells": 4
+    },
+    {
         "int_mod": 8
     }
+    
   ]
