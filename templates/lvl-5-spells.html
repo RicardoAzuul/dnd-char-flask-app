@@ -3,30 +3,23 @@
 {% block content %}
     <section class="container">
         <h1>Level 5 Spells</h1>
-
-        {% for item in spellcasting %}
-        <tr>
-            <td>{{ item.key }}</td>
-            <td>{{ item.value }}</td>
-        </tr>               
-        {% endfor %}
-
+      
         <table class="table table-sm">
             <tr>
                 <th>Spell Lvl</th>
-                <th>Lvl 5</th>
+                <th>{{ spellcasting[0].spell_level }} </th>
             </tr>
             <tr>
                 <td>Bonus Spells</td>
-                <td>1</td>
+                <td>{{ spellcasting[1].bonus_spells }} </td>
             </tr>
             <tr>
                 <td>Spells/Day</td>
-                <td>3</td>
+                <td>{{ spellcasting[2].daily_spells }} </td>
             </tr>
             <tr>
                 <td>Total</td>
-                <td id="total-spell-slots">4</td>
+                <td id="total-spell-slots">{{ spellcasting[3].total_spells }} </td>
             </tr>
             <tr>
                 <td>Slots left</td>
@@ -34,7 +27,7 @@
             </tr>
             <tr>
                 <td>Spell Save DC</td>
-                <td>23</td>
+                <td>{{ spellcasting[4].spell_dc }} </td>
             </tr>
         </table>
         <p>

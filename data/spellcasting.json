@@ -12,7 +12,6 @@
         "total_spells": 4
     },
     {
-        "int_mod": 8
-    }
-    
+        "spell_dc": 23
+    }    
   ]
