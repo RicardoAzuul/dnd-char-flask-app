@@ -49,7 +49,9 @@ def lvl_5_spells():
         spellranges = json.load(json_data)
     with open("data/spellcasting.json", "r") as json_data:
         spellcasting = json.load(json_data)
-    return render_template("lvl-5-spells.html", page_title="Level 5 Spells", spellranges=spellranges, spellcasting=spellcasting)
+    with open("data/lvl_5_spells.json", "r") as json_data:
+        lvl_5_spells = json.load(json_data)
+    return render_template("lvl-5-spells.html", page_title="Level 5 Spells", spellranges=spellranges, spellcasting=spellcasting, lvl_5_spells=lvl_5_spells)
 
 
 @app.route("/lvl-4-spells")
