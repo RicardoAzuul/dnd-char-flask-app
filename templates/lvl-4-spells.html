@@ -36,20 +36,15 @@
 
         <h3 id="spell-ranges">Spell Ranges</h3>
         <table class="table table-sm">
-            <tr>
-                <td>Close</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>Medium</td>
-                <td>200</td>
-
-            </tr>
-            <tr>
-                <td>Long</td>
-                <td>800</td>
-            </tr>
+        <!-- this is the JSON data that is passed to the template via app.py  -->
+            {% for item in spellranges %}
+                <tr>
+                    <td>{{ item.range_name }}</td>
+                    <td>{{ item.range_in_feet }}</td>
+                </tr>               
+            {% endfor %}
         </table>
+        
         <p>* Spells enhanced by Spell Focus: Ench.* --> +1 DC</p>
         <p>** Spells enhanced by Greater Spell Focus: Illu.** --> +2 DC</p>
         <table class="table table-sm">

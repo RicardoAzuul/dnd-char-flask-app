@@ -45,6 +45,7 @@ def contact():
 def lvl_5_spells():
     spellranges = []
     spellcasting = []
+    lvl_5_spells = []
     with open("data/spellranges.json", "r") as json_data:
         spellranges = json.load(json_data)
     with open("data/spellcasting.json", "r") as json_data:
@@ -56,27 +57,42 @@ def lvl_5_spells():
 
 @app.route("/lvl-4-spells")
 def lvl_4_spells():
-    return render_template("lvl-4-spells.html", page_title="Level 4 Spells")
+    spellranges = []
+    with open("data/spellranges.json", "r") as json_data:
+        spellranges = json.load(json_data)
+    return render_template("lvl-4-spells.html", page_title="Level 4 Spells", spellranges=spellranges)
 
 
 @app.route("/lvl-3-spells")
 def lvl_3_spells():
-    return render_template("lvl-3-spells.html", page_title="Level 3 Spells")
+    spellranges = []
+    with open("data/spellranges.json", "r") as json_data:
+        spellranges = json.load(json_data)
+    return render_template("lvl-3-spells.html", page_title="Level 3 Spells", spellranges=spellranges)
 
 
 @app.route("/lvl-2-spells")
 def lvl_2_spells():
-    return render_template("lvl-2-spells.html", page_title="Level 2 Spells")
+    spellranges = []
+    with open("data/spellranges.json", "r") as json_data:
+        spellranges = json.load(json_data)
+    return render_template("lvl-2-spells.html", page_title="Level 2 Spells", spellranges=spellranges)
 
 
 @app.route("/lvl-1-spells")
 def lvl_1_spells():
-    return render_template("lvl-1-spells.html", page_title="Level 1 Spells")
+    spellranges = []
+    with open("data/spellranges.json", "r") as json_data:
+        spellranges = json.load(json_data)
+    return render_template("lvl-1-spells.html", page_title="Level 1 Spells", spellranges=spellranges)
 
 
 @app.route("/lvl-0-spells")
 def lvl_0_spells():
-    return render_template("lvl-0-spells.html", page_title="Level 0 Spells")
+    spellranges = []
+    with open("data/spellranges.json", "r") as json_data:
+        spellranges = json.load(json_data)
+    return render_template("lvl-0-spells.html", page_title="Level 0 Spells", spellranges=spellranges)
 
 
 @app.route("/spelltactics")
