@@ -1,0 +1,420 @@
+{"spellranges":[
+    { "range_name": "Close", "range_in_feet": "50" },
+    { "range_name": "Medium", "range_in_feet": "200" },
+    { "range_name": "Long", "range_in_feet": "800" }
+],
+"spellcasting_level_0":[
+    { "spell_level": 0 },
+    { "bonus_spells": 0 },
+    { "daily_spells": 6 },
+    { "total_spells": 6 },
+    { "spell_dc": 18 }   
+],
+"spellcasting_level_1":[
+    { "spell_level": 1 },
+    { "bonus_spells": 2 },
+    { "daily_spells": 6 },
+    { "total_spells": 8 },
+    { "spell_dc": 19 }   
+],
+"spellcasting_level_2":[
+    { "spell_level": 2 },
+    { "bonus_spells": 2 },
+    { "daily_spells": 6 },
+    { "total_spells": 8 },
+    { "spell_dc": 20 }   
+],
+"spellcasting_level_3":[
+    { "spell_level": 3 },
+    { "bonus_spells": 2 },
+    { "daily_spells": 6 },
+    { "total_spells": 8 },
+    { "spell_dc": 21 }   
+],
+"spellcasting_level_4":[
+    { "spell_level": 4 },
+    { "bonus_spells": 2 },
+    { "daily_spells": 5 },
+    { "total_spells": 7 },
+    { "spell_dc": 22 }   
+],
+"spellcasting_level_5":[
+    { "spell_level": 5 },
+    { "bonus_spells": 1 },
+    { "daily_spells": 3 },
+    { "total_spells": 4 },
+    { "spell_dc": 23 }   
+],
+"lvl_0_spells": [
+        {
+            "name": "Break Enchantment - Ajb.",
+            "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Break%20Enchantment",
+            "range": "C",
+            "area_target_effect": "creature/lvl, all within 30 ft. of each other"      
+        },
+        {
+            "name": "Dominate Person - Ench.*",
+            "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Dominate%20Person",
+            "range": "C",
+            "area_target_effect": "1 humanoid"      
+        },
+        {
+            "name": "Feeblemind - Ench.*",
+            "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Feeblemind",
+            "range": "M",
+            "area_target_effect": "1 creature"      
+        },
+        {
+            "name": "Friend to Foe - Illu*",
+            "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#FRIEND%20TO%20FOE",
+            "range": "C",
+            "area_target_effect": "1 creature"      
+        },
+        {
+            "name": "Incite Riot - Ench.*",
+            "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#INCITE%20RIOT",
+            "range": "C",
+            "area_target_effect": "creature/lvl, no two of which more than 30 ft. apart"      
+        },
+        {
+            "name": "Mind Fog - Ench.*",
+            "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Mind%20Fog",
+            "range": "M",
+            "area_target_effect": "Fog in 20-ft. radius, 20 ft. high"      
+        },
+        {
+            "name": "Rary's Telepathic Bond - Div.",
+            "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Rary's%20Telepathic%20Bond",
+            "range": "C",
+            "area_target_effect": "You + 1 willing creature/3 lvls, no two of which more than 30 ft. apart"      
+        },
+        {
+            "name": "Seeming - Illu.**",
+            "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Seeming",
+            "range": "C",
+            "area_target_effect": "creature/2 lvls, no two of which more than 30 ft. apart"      
+        },
+        {
+            "name": "Sending - Evo.",
+            "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Sending",
+            "range": "Special",
+            "area_target_effect": "1 creature"      
+        },
+        {
+            "name": "Swift Etherealness - Trans.",
+            "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#ETHEREALNESS,%20SWIFT",
+            "range": "C",
+            "area_target_effect": "1 willing creature"      
+        }
+],
+"lvl_1_spells": [
+    {
+        "name": "Break Enchantment - Ajb.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Break%20Enchantment",
+        "range": "C",
+        "area_target_effect": "creature/lvl, all within 30 ft. of each other"      
+    },
+    {
+        "name": "Dominate Person - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Dominate%20Person",
+        "range": "C",
+        "area_target_effect": "1 humanoid"      
+    },
+    {
+        "name": "Feeblemind - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Feeblemind",
+        "range": "M",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Friend to Foe - Illu*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#FRIEND%20TO%20FOE",
+        "range": "C",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Incite Riot - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#INCITE%20RIOT",
+        "range": "C",
+        "area_target_effect": "creature/lvl, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Mind Fog - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Mind%20Fog",
+        "range": "M",
+        "area_target_effect": "Fog in 20-ft. radius, 20 ft. high"      
+    },
+    {
+        "name": "Rary's Telepathic Bond - Div.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Rary's%20Telepathic%20Bond",
+        "range": "C",
+        "area_target_effect": "You + 1 willing creature/3 lvls, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Seeming - Illu.**",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Seeming",
+        "range": "C",
+        "area_target_effect": "creature/2 lvls, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Sending - Evo.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Sending",
+        "range": "Special",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Swift Etherealness - Trans.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#ETHEREALNESS,%20SWIFT",
+        "range": "C",
+        "area_target_effect": "1 willing creature"      
+    }
+],
+"lvl_2_spells": [
+    {
+        "name": "Break Enchantment - Ajb.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Break%20Enchantment",
+        "range": "C",
+        "area_target_effect": "creature/lvl, all within 30 ft. of each other"      
+    },
+    {
+        "name": "Dominate Person - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Dominate%20Person",
+        "range": "C",
+        "area_target_effect": "1 humanoid"      
+    },
+    {
+        "name": "Feeblemind - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Feeblemind",
+        "range": "M",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Friend to Foe - Illu*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#FRIEND%20TO%20FOE",
+        "range": "C",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Incite Riot - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#INCITE%20RIOT",
+        "range": "C",
+        "area_target_effect": "creature/lvl, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Mind Fog - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Mind%20Fog",
+        "range": "M",
+        "area_target_effect": "Fog in 20-ft. radius, 20 ft. high"      
+    },
+    {
+        "name": "Rary's Telepathic Bond - Div.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Rary's%20Telepathic%20Bond",
+        "range": "C",
+        "area_target_effect": "You + 1 willing creature/3 lvls, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Seeming - Illu.**",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Seeming",
+        "range": "C",
+        "area_target_effect": "creature/2 lvls, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Sending - Evo.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Sending",
+        "range": "Special",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Swift Etherealness - Trans.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#ETHEREALNESS,%20SWIFT",
+        "range": "C",
+        "area_target_effect": "1 willing creature"      
+    }
+],
+"lvl_3_spells": [
+    {
+        "name": "Break Enchantment - Ajb.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Break%20Enchantment",
+        "range": "C",
+        "area_target_effect": "creature/lvl, all within 30 ft. of each other"      
+    },
+    {
+        "name": "Dominate Person - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Dominate%20Person",
+        "range": "C",
+        "area_target_effect": "1 humanoid"      
+    },
+    {
+        "name": "Feeblemind - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Feeblemind",
+        "range": "M",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Friend to Foe - Illu*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#FRIEND%20TO%20FOE",
+        "range": "C",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Incite Riot - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#INCITE%20RIOT",
+        "range": "C",
+        "area_target_effect": "creature/lvl, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Mind Fog - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Mind%20Fog",
+        "range": "M",
+        "area_target_effect": "Fog in 20-ft. radius, 20 ft. high"      
+    },
+    {
+        "name": "Rary's Telepathic Bond - Div.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Rary's%20Telepathic%20Bond",
+        "range": "C",
+        "area_target_effect": "You + 1 willing creature/3 lvls, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Seeming - Illu.**",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Seeming",
+        "range": "C",
+        "area_target_effect": "creature/2 lvls, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Sending - Evo.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Sending",
+        "range": "Special",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Swift Etherealness - Trans.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#ETHEREALNESS,%20SWIFT",
+        "range": "C",
+        "area_target_effect": "1 willing creature"      
+    }
+],
+"lvl_4_spells": [
+    {
+        "name": "Break Enchantment - Ajb.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Break%20Enchantment",
+        "range": "C",
+        "area_target_effect": "creature/lvl, all within 30 ft. of each other"      
+    },
+    {
+        "name": "Dominate Person - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Dominate%20Person",
+        "range": "C",
+        "area_target_effect": "1 humanoid"      
+    },
+    {
+        "name": "Feeblemind - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Feeblemind",
+        "range": "M",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Friend to Foe - Illu*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#FRIEND%20TO%20FOE",
+        "range": "C",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Incite Riot - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#INCITE%20RIOT",
+        "range": "C",
+        "area_target_effect": "creature/lvl, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Mind Fog - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Mind%20Fog",
+        "range": "M",
+        "area_target_effect": "Fog in 20-ft. radius, 20 ft. high"      
+    },
+    {
+        "name": "Rary's Telepathic Bond - Div.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Rary's%20Telepathic%20Bond",
+        "range": "C",
+        "area_target_effect": "You + 1 willing creature/3 lvls, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Seeming - Illu.**",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Seeming",
+        "range": "C",
+        "area_target_effect": "creature/2 lvls, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Sending - Evo.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Sending",
+        "range": "Special",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Swift Etherealness - Trans.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#ETHEREALNESS,%20SWIFT",
+        "range": "C",
+        "area_target_effect": "1 willing creature"      
+    }
+],
+"lvl_5_spells": [
+    {
+        "name": "Break Enchantment - Ajb.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Break%20Enchantment",
+        "range": "C",
+        "area_target_effect": "creature/lvl, all within 30 ft. of each other"      
+    },
+    {
+        "name": "Dominate Person - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Dominate%20Person",
+        "range": "C",
+        "area_target_effect": "1 humanoid"      
+    },
+    {
+        "name": "Feeblemind - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Feeblemind",
+        "range": "M",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Friend to Foe - Illu*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#FRIEND%20TO%20FOE",
+        "range": "C",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Incite Riot - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#INCITE%20RIOT",
+        "range": "C",
+        "area_target_effect": "creature/lvl, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Mind Fog - Ench.*",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Mind%20Fog",
+        "range": "M",
+        "area_target_effect": "Fog in 20-ft. radius, 20 ft. high"      
+    },
+    {
+        "name": "Rary's Telepathic Bond - Div.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Rary's%20Telepathic%20Bond",
+        "range": "C",
+        "area_target_effect": "You + 1 willing creature/3 lvls, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Seeming - Illu.**",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Seeming",
+        "range": "C",
+        "area_target_effect": "creature/2 lvls, no two of which more than 30 ft. apart"      
+    },
+    {
+        "name": "Sending - Evo.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Sending",
+        "range": "Special",
+        "area_target_effect": "1 creature"      
+    },
+    {
+        "name": "Swift Etherealness - Trans.",
+        "link": "https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#ETHEREALNESS,%20SWIFT",
+        "range": "C",
+        "area_target_effect": "1 willing creature"      
+    }
+]
+}

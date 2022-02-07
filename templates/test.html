@@ -1,0 +1,24 @@
+<!-- gets content from base.html -->
+{% extends "base.html" %}
+{% block content %}
+    <section class="container">
+        <h1>Test</h1> 
+
+        {{ test }}
+
+        <h3 id="spell-ranges">Spell Ranges</h3>
+        <table class="table table-sm">
+        <!-- this is the JSON data that is passed to the template via app.py  -->
+            {% for item in test.spellranges %}
+                <tr>
+                    <td>{{ item.range_name }}</td>
+                    <td>{{ item.range_in_feet }}</td>
+                </tr>               
+            {% endfor %}
+        </table>
+
+        {% for item in test.spellcasting_level_0 %}
+            {{ item }}
+        {% endfor %}          
+    </section>
+{% endblock %}

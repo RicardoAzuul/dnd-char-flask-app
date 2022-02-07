@@ -1,0 +1,12 @@
+{"spellranges":[
+    { "range_name": "Close", "range_in_feet": "50" },
+    { "range_name": "Medium", "range_in_feet": "200" },
+    { "range_name": "Long", "range_in_feet": "800" }
+],
+"spellcasting_level_0":[
+    { "spell_level": 0 },
+    { "bonus_spells": 1 },
+    { "daily_spells": 3 },
+    { "total_spells": 4 },
+    { "spell_dc": 23 }   
+]}
