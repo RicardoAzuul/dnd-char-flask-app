@@ -14,45 +14,12 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/about")
-def about():
-    data = []
-    with open("data/company.json", "r") as json_data:
-        data = json.load(json_data)
-    return render_template("about.html", page_title="About", company=data)
-
-
-@app.route("/about/<member_name>")
-def about_member(member_name):
-    member = {}
-    with open("data/company.json", "r") as json_data:
-        data = json.load(json_data)
-        for object in data:
-            if object["url"] == member_name:
-                member = object
-    return render_template("member.html", member=member)
-
-
-@app.route("/contact", methods=["GET", "POST"])
-def contact():
-    if request.method == "POST":
-        flash("Thanks {}, we have received your message!".format(
-            request.form.get("name")))
-    return render_template("contact.html", page_title="Contact")
-
-
 @app.route("/lvl-5-spells")
 def lvl_5_spells():
-    spellranges = []
-    spellcasting = []
-    lvl_5_spells = []
-    with open("data/spellranges.json", "r") as json_data:
-        spellranges = json.load(json_data)
-    with open("data/spellcasting.json", "r") as json_data:
-        spellcasting = json.load(json_data)
-    with open("data/lvl_5_spells.json", "r") as json_data:
-        lvl_5_spells = json.load(json_data)
-    return render_template("lvl-5-spells.html", page_title="Level 5 Spells", spellranges=spellranges, spellcasting=spellcasting, lvl_5_spells=lvl_5_spells)
+    aenwyns_spellcasting = []
+    with open("data/aenwyns_spellcasting.json", "r") as json_data:
+        aenwyns_spellcasting = json.load(json_data)
+    return render_template("lvl-5-spells.html", page_title="Level 5 Spells", aenwyns_spellcasting=aenwyns_spellcasting)
 
 
 @app.route("/lvl-4-spells")
