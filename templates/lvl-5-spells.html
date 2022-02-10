@@ -7,19 +7,19 @@
         <table class="table table-sm">
             <tr>
                 <th>Spell Lvl</th>
-                <th>{{ spellcasting[0].spell_level }} </th>
+                <th>{{ aenwyns_spellcasting.spellcasting_level_5[0]['spell_level'] }} </th>
             </tr>
             <tr>
                 <td>Bonus Spells</td>
-                <td>{{ spellcasting[1].bonus_spells }} </td>
+                <td>{{ aenwyns_spellcasting.spellcasting_level_5[1]['bonus_spells'] }} </td>
             </tr>
             <tr>
                 <td>Spells/Day</td>
-                <td>{{ spellcasting[2].daily_spells }} </td>
+                <td>{{ aenwyns_spellcasting.spellcasting_level_5[2]['daily_spells'] }} </td>
             </tr>
             <tr>
                 <td>Total</td>
-                <td id="total-spell-slots">{{ spellcasting[3].total_spells }} </td>
+                <td id="total-spell-slots">{{ aenwyns_spellcasting.spellcasting_level_5[3]['total_spells'] }} </td>
             </tr>
             <tr>
                 <td>Slots left</td>
@@ -27,9 +27,10 @@
             </tr>
             <tr>
                 <td>Spell Save DC</td>
-                <td>{{ spellcasting[4].spell_dc }} </td>
+                <td>{{ aenwyns_spellcasting.spellcasting_level_5[4]['spell_dc'] }} </td>
             </tr>
         </table>
+
         <p>
             <button onclick="resetSlots()" class="btn btn-primary" type="button">Reset</button>
             <button onclick="subtractSlot()" class="btn btn-primary" type="button">Subtract slot</button>
@@ -38,7 +39,7 @@
         <h3 id="spell-ranges">Spell Ranges</h3>
         <table class="table table-sm">
         <!-- this is the JSON data that is passed to the template via app.py  -->
-            {% for item in spellranges %}
+            {% for item in aenwyns_spellcasting.spellranges %}
                 <tr>
                     <td>{{ item.range_name }}</td>
                     <td>{{ item.range_in_feet }}</td>
@@ -55,7 +56,7 @@
                 <th>Range</th>
                 <th>Area/Target/Effect</th>
             </tr>
-            {% for spell in lvl_5_spells %}
+            {% for spell in aenwyns_spellcasting.lvl_5_spells %}
             <tr>
                 <td><a href={{ spell.link }} target="_blank">{{ spell.name }}</a></td>
                 <td>{{ spell.range }}</td>
@@ -63,5 +64,6 @@
             </tr>
             {% endfor %}
         </table>
+        
     </section>
 {% endblock %}

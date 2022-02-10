@@ -3,32 +3,34 @@
 {% block content %}
     <section class="container">
         <h1>Level 4 Spells</h1>
+
         <table class="table table-sm">
             <tr>
                 <th>Spell Lvl</th>
-                <th>Lvl 4</th>
+                <th>{{ aenwyns_spellcasting.spellcasting_level_4[0]['spell_level'] }} </th>
             </tr>
             <tr>
                 <td>Bonus Spells</td>
-                <td>2</td>
+                <td>{{ aenwyns_spellcasting.spellcasting_level_4[1]['bonus_spells'] }} </td>
             </tr>
             <tr>
                 <td>Spells/Day</td>
-                <td>5</td>
+                <td>{{ aenwyns_spellcasting.spellcasting_level_4[2]['daily_spells'] }} </td>
             </tr>
             <tr>
                 <td>Total</td>
-                <td id="total-spell-slots">7</td>
+                <td id="total-spell-slots">{{ aenwyns_spellcasting.spellcasting_level_4[3]['total_spells'] }} </td>
             </tr>
             <tr>
                 <td>Slots left</td>
-                <td class="spell-slot-counter" id="lvl-4-spellslots"></td>
+                <td class="spell-slot-counter" id="lvl-5-spellslots"></td>
             </tr>
             <tr>
                 <td>Spell Save DC</td>
-                <td>22</td>
+                <td>{{ aenwyns_spellcasting.spellcasting_level_4[4]['spell_dc'] }} </td>
             </tr>
         </table>
+
         <p>
             <button onclick="resetSlots()" class="btn btn-primary" type="button">Reset</button>
             <button onclick="subtractSlot()" class="btn btn-primary" type="button">Subtract slot</button>
@@ -37,7 +39,7 @@
         <h3 id="spell-ranges">Spell Ranges</h3>
         <table class="table table-sm">
         <!-- this is the JSON data that is passed to the template via app.py  -->
-            {% for item in spellranges %}
+            {% for item in aenwyns_spellcasting.spellranges %}
                 <tr>
                     <td>{{ item.range_name }}</td>
                     <td>{{ item.range_in_feet }}</td>
@@ -47,117 +49,21 @@
         
         <p>* Spells enhanced by Spell Focus: Ench.* --> +1 DC</p>
         <p>** Spells enhanced by Greater Spell Focus: Illu.** --> +2 DC</p>
+
         <table class="table table-sm">
             <tr>
                 <th>Name</th>
                 <th>Range</th>
                 <th>Area/Target/Effect</th>
             </tr>
+            {% for spell in aenwyns_spellcasting.lvl_4_spells %}
             <tr>
-                <td><a href="https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Charm%20Monster" target="_blank">Charm Monster - Ench.*</a></td>
-                <td>C</td>
-                <td>1 living creature</td>
+                <td><a href={{ spell.link }} target="_blank">{{ spell.name }}</a></td>
+                <td>{{ spell.range }}</td>
+                <td>{{ spell.area_target_effect }}</td>
             </tr>
-            <tr>
-                <td><a href="https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Confusion" target="_blank">Confusion - Ench.*</a></td>
-                <td>M</td>
-                <td>Creatures in a 15-ft. radius burst</td>
-            </tr> 
-            <tr>
-                <td><a href="https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Crushing%20Despair" target="_blank">Crushing Despair - Ench.*</a></td>
-                <td>30 ft.</td>
-                <td>Cone</td>
-            </tr>
-            <tr>
-                <td><a href="https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Freedom%20of%20Movement" target="_blank">Freedom of Movement - Abj.</a></td>
-                <td>Personal/touch</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><a href="https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#greater-invisibility" target="_blank">Greater Invisibility - Illu.**</a></td>
-                <td>Personal/touch</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><a href="https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#MIRROR%20IMAGE,%20GREATER" target="_blank">Greater Mirror Image - Illu.** <i class="fas fa-bolt"></i></a></td>
-                <td>Personal</td>
-                <td></td>
-            </tr> 
-            <tr>
-                <td><a href="https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Locate%20Creature" target="_blank">Locate Creature - Div.</a></td>
-                <td>Long</td>
-                <td>Circle, centered on you, with a radius of L</td>
-            </tr>
-            <tr>
-                <td><a href="https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#PHANTOM%20BATTLE" target="_blank">Phantom Battle - Illu.**</a></td>
-                <td>M</td>
-                <td>20-ft.-radius spread</td>
-            </tr>
-            <tr>
-                <td><a href="https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Rainbow%20Pattern" target="_blank">Rainbow Pattern - Illu.**<i class="fas fa-brain"></i></a></td>
-                <td>M</td>
-                <td>20-ft.-radius spread</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.d20srd.org/srd/spells/shadowConjuration.htm" target="_blank">Shadow Conjuration - Illu.**</a></td>
-                <td>Based on original spell: see <i class="fas fa-cloud"></i></td>
-                <td>Based on original spell see <i class="fas fa-cloud"></i></td>
-            </tr>
-            <tr>
-                <td><a href="https://www.d20srd.org/srd/spells/grease.htm" target="_blank">Grease - Conj. (Creation) <i class="fas fa-cloud"></i></a></td>
-                <td>C</td>
-                <td>1 object/10-ft. square</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.d20srd.org/srd/spells/phantomSteed.htm" target="_blank">Phantom Steed - Conj. (Creation) <i class="fas fa-cloud"></i></a></td>
-                <td>0 ft.</td>
-                <td>1 quasi-real, horselike creature</td>
-            </tr>
-            <tr>
-                <td><a href="https://dndtools.org/spells/spell-compendium--86/regal-procession--4084/" target="_blank">Regal Procession - Conj. (Creation) <i class="fas fa-cloud"></i></a></td>
-                <td>C</td>
-                <td>1 mount/lvl</td>
-            </tr>
-            <tr>
-                <td><a href="https://dndtools.org/spells/spell-compendium--86/servant-horde--4140/" target="_blank">Servant Horde - Conj. (Creation) <i class="fas fa-cloud"></i></a></td>
-                <td>C</td>
-                <td>2d6 + 1/lvl (max + 15) unseen servants</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.d20srd.org/srd/spells/sleetStorm.htm" target="_blank">Sleetstorm - Conj. (Creation) <i class="fas fa-cloud"></i></a></td>
-                <td>L</td>
-                <td>Cylinder (40-ft. radius, 20 ft. high)</td>
-            </tr>
-            <tr>
-                <td><a href="" target="_blank">Stinking Cloud - Conj. (Creation) <i class="fas fa-cloud"></i></a></td>
-                <td>M</td>
-                <td>Cloud spreads in 20-ft. radius, 20 ft. high</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.d20srd.org/srd/spells/summonMonsterIII.htm"C target="_blank">Summon Monster III - Conj. (Summon) <i class="fas fa-cloud"></i></a></td>
-                <td>C</td>
-                <td>1 or more summoned creatures</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.d20srd.org/srd/spells/unseenServant.htm" target="_blank">Unseen Servant - Conj. (Creation) <i class="fas fa-cloud"></i></a></td>
-                <td>C</td>
-                <td>One invisible, mindless, shapeless servant</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.d20srd.org/srd/spells/web.htm" target="_blank">Web - Conj. (Creation) <i class="fas fa-cloud"></i></a></td>
-                <td>M</td>
-                <td>Webs in a 20-ft.-radius spread</td>
-            </tr>
-            <tr>
-                <td><a href="https://srd.dndtools.org/srd/magic/spells/spells/spellsAllCore.html#Solid%20Fog" target="_blank">Solid Fog - Conj.</a></td>
-                <td> M</td>
-                <td>Fog spreads in 20-ft. radius, 20 ft. high</td>
-            </tr>
-            <tr>
-                <td><a href="https://srd.dndtools.org/srd/magic/spells/spells/spellsphb2.html#WHELM,%20MASS" target="_blank">Mass Whelm - Ench.*</a></td>
-                <td>C</td>
-                <td>One living creature/level</td>
-            </tr>
+            {% endfor %}
         </table>
+
     </section>
 {% endblock %}
