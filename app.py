@@ -24,10 +24,10 @@ def lvl_5_spells():
 
 @app.route("/lvl-4-spells")
 def lvl_4_spells():
-    spellranges = []
-    with open("data/spellranges.json", "r") as json_data:
-        spellranges = json.load(json_data)
-    return render_template("lvl-4-spells.html", page_title="Level 4 Spells", spellranges=spellranges)
+    aenwyns_spellcasting = []
+    with open("data/aenwyns_spellcasting.json", "r") as json_data:
+        aenwyns_spellcasting = json.load(json_data)
+    return render_template("lvl-4-spells.html", page_title="Level 4 Spells", aenwyns_spellcasting=aenwyns_spellcasting)
 
 
 @app.route("/lvl-3-spells")
